@@ -3,11 +3,6 @@ Perfect SSR seed finding based on map spliting
 
 ### MineAChunkSeedfinding
 
-In this project, I use KaptainWutax's seedutils to find good seeds to run for Minecraft 1.16.1 Set-Seed Mine-A-Chunk speedruns.
-
-My group usually runs co-op, but these seeds can be used for singleplayer aswell.
-
-
 ## Installation
 1. Create a new IntelliJ project, with gradle support. 
 2. Either use my build.gradle, or add the following to yours: 
@@ -35,7 +30,6 @@ Then, once we have good structure seeds, we can generate a good world seed with 
 This (together with the structure seed) determines the biome, spawnpoint and some other factors.\
 We try to get a good world seed so that we spawn in a forest, with a spawnpoint close to where the two ravines intersect, and the intersection point is not underwater.
 
-
 ## Usage
 To generate structure seeds, you can leave the viableStructureSeeds array in main.java empty. Then, it will spawn a number of threads, default 12, to iterate over all seeds sequentially\
 and try to find good ones. \
@@ -54,7 +48,6 @@ which only has about 3687 blocks that need to be mined.
 # Seed Chunk Checker
 
 Checks the frequencies of blocks in a given chunk of a given seed.
-
 
 ## Usage
 1. Build shadow (fat) jar with `./gradlew shadowJar` (`gradlew.bat shadowJar` on windows)
@@ -128,8 +121,6 @@ The program can handle the following formats for seeds (One per line):
   - `/seed cracker <ON/OFF>`
  
   Enables or disables the mod completely. Unlike the other commands, this one is persistent across reloads.
-
-
 
 ## Building the Mod
 
